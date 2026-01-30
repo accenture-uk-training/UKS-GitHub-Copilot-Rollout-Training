@@ -59,13 +59,13 @@ These metrics typically show measurable improvement *before* DORA metrics shift,
 
 | Metric | Definition | Source | Example Baseline | Target / Hypothesis |
 |--------|------------|--------|-------------------|-------------------|
-| **PR Cycle Time** | Time from PR opened to merged (median) | GitHub | 2.5 days | −15–30% reduction |
+| **PR Cycle Time** | Time from PR opened to merged (median) | GitHub | 2.5 days | -15% to -30% reduction |
 | **Review Wait Time** | Time from PR opened to first review comment | GitHub | 18 hours | −20% reduction |
-| **Coding Time Proxy** | Time from first commit to PR opened | GitHub | 1.8 days | −10–25% reduction |
-| **PR Size** | Lines of code changed per PR (median) | GitHub | 450 LOC | −10–20% reduction (optional) |
+| **Coding Time Proxy** | Time from first commit to PR opened | GitHub | 1.8 days | -10% to -25% reduction |
+| **PR Size** | Lines of code changed per PR (median) | GitHub | 450 LOC | -10% to -20% reduction (optional) |
 | **Rework Rate** | Percentage of PRs requiring follow-up fixes within 7 days | GitHub | 12% | Maintain or improve (no increase) |
 
-**Why these matter:** Faster PR cycles and shorter review times often signal that developers are delivering smaller, more focused changes—a hallmark of productive, confident teams.
+**Why these matter:** Faster PR cycles and shorter review times often signal that developers are delivering smaller, more focused changes - a hallmark of productive, confident teams.
 
 ---
 
@@ -116,7 +116,7 @@ To claim impact from Copilot, you must first prove that developers are actually 
 
 ## 8. Developer Experience Outcomes (DX)
 
-Keep this lightweight—a quick pulse check to understand developer sentiment and perceived impact. Use this as part of sprint retrospectives or brief weekly surveys.
+Keep this lightweight - a quick pulse check to understand developer sentiment and perceived impact. Use this as part of sprint retrospectives or brief weekly surveys.
 
 | Metric | Definition | Source | Example Baseline | Target |
 |--------|------------|--------|-------------------|--------|
