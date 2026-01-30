@@ -175,7 +175,7 @@ Start broad, then narrow down:
 
 ---
 
-## Organizational Standards with Instruction Files
+## Organisational Standards with Instruction Files
 
 ### What are Copilot Instructions?
 
