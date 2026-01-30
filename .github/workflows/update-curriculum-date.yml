@@ -23,8 +23,8 @@ jobs:
       - name: Update curriculum date in README
         run: |
           CURRENT_DATE=$(date +"%B %d, %Y")
-          sed -i.bak "s/\*\*Curriculum updated:\*\* .*/\*\*Curriculum updated:\*\* $CURRENT_DATE/" README.md
-          rm README.md.bak
+          sed -i "s/\*\*Curriculum updated:\*\* .*/\*\*Curriculum updated:\*\* $CURRENT_DATE/" README.md
+      
       
       - name: Commit and push if changed
         run: |
