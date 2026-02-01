@@ -51,8 +51,8 @@ function validateEmail(email) {
 **Enhanced Example (with CRAFT):**
 ```javascript
 /**
- * Validates an email address format based on RFC 5322 (message format)
- * and RFC 5321 (SMTP) standards.
+ * Performs basic validation of an email address format using common rules,
+ * without claiming full RFC 5322 or RFC 5321 compliance.
  * Returns true if valid, false otherwise.
  * Should handle edge cases like empty strings and null values.
  * @param {string} email - The email address to validate
@@ -225,8 +225,10 @@ Create instructions for specific file types or directories:
 
 **For test files (`.github/instructions/tests.instructions.md`):**
 ```markdown
+
 ---
 applyTo: "**/*.test.js,**/*.spec.ts"
+description: "Guidelines for writing unit tests"
 ---
 
 # Test File Instructions
@@ -379,7 +381,7 @@ For any function handling user input:
 For authentication-related code:
 - Never store passwords in plain text
 - Use Argon2id for password hashing (recommended by OWASP)
-  - Alternatives: scrypt, or bcrypt for legacy systems only
+  - Alternatives: scrypt, or bcrypt with a high work factor for compatibility requirements
 - Implement rate limiting
 - Use secure session management
 ```

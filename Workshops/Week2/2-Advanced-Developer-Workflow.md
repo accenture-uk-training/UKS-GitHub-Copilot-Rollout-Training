@@ -203,7 +203,7 @@ Not every suggestion from Copilot is production-ready. Learning to refine and im
 | **Security** | Any vulnerabilities? Input validation? | Add security measures | `query = "SELECT * FROM users WHERE id=" + id` | "Refactor to use parameterised queries to prevent SQL injection" | `query = "SELECT * FROM users WHERE id = @id"` |
 | **Performance** | Will it scale? Any inefficiencies? | Optimise as needed | `arr.filter(x => x.active).map(x => x.id)` called in loop | "Optimise this to avoid repeated filtering" | Cache result: `const activeIds = arr.filter(x => x.active).map(x => x.id)` |
 | **Readability** | Is it clear? Well-named? | Refactor for clarity | `const x = users.filter(u => u.a > 5);` | "Rename variables to be more descriptive" | `const activeUsers = users.filter(user => user.activityScore > 5);` |
-| **Standards** | Follows team conventions? | Align with guidelines | `const userName = get_user_name();` | "Update to use consistent snake_case naming" | `const user_name = get_user_name();` |
+| **Standards** | Follows team conventions? | Align with guidelines | `const user_name = get_user_name();` | "Update to use consistent camelCase naming" | `const userName = getUserName();` |
 
 ---
 
