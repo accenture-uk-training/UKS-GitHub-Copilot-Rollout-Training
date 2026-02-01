@@ -196,14 +196,14 @@ Not every suggestion from Copilot is production-ready. Learning to refine and im
 
 ### What to Look For When Reviewing
 
-| Aspect | Questions to Ask | Action |
-|--------|------------------|--------|
-| **Correctness** | Does it work? Any logic errors? | Test and debug |
-| **Completeness** | Are edge cases handled? | Add missing scenarios |
-| **Security** | Any vulnerabilities? Input validation? | Add security measures |
-| **Performance** | Will it scale? Any inefficiencies? | Optimise as needed |
-| **Readability** | Is it clear? Well-named? | Refactor for clarity |
-| **Standards** | Follows team conventions? | Align with guidelines |
+| Aspect | Questions to Ask | Action | Example (Incorrect) | Prompt to Fix | Corrected Output |
+|--------|------------------|--------|---------------------|---------------|------------------|
+| **Correctness** | Does it work? Any logic errors? | Test and debug | `for (i = 0; i <= arr.length; i++)` | "Fix the off-by-one error in this loop" | `for (i = 0; i < arr.length; i++)` |
+| **Completeness** | Are edge cases handled? | Add missing scenarios | `function getUser(id) { return users[id].name; }` | "Add null checking for when user doesn't exist" | `function getUser(id) { return users[id]?.name ?? 'Unknown'; }` |
+| **Security** | Any vulnerabilities? Input validation? | Add security measures | `query = "SELECT * FROM users WHERE id=" + id` | "Refactor to use parameterised queries to prevent SQL injection" | `query = "SELECT * FROM users WHERE id = @id"` |
+| **Performance** | Will it scale? Any inefficiencies? | Optimise as needed | `arr.filter(x => x.active).map(x => x.id)` called in loop | "Optimise this to avoid repeated filtering" | Cache result: `const activeIds = arr.filter(x => x.active).map(x => x.id)` |
+| **Readability** | Is it clear? Well-named? | Refactor for clarity | `const x = users.filter(u => u.a > 5);` | "Rename variables to be more descriptive" | `const activeUsers = users.filter(user => user.activityScore > 5);` |
+| **Standards** | Follows team conventions? | Align with guidelines | `const userName = get_user_name();` | "Update to use consistent snake_case naming" | `const user_name = get_user_name();` |
 
 ---
 
@@ -451,12 +451,12 @@ Generate tests and refine them:
 
 ### Documentation Generation
 
-| Practice | Description |
-|----------|-------------|
-| **Document as you go** | Generate docs when writing new functions |
-| **Use structured formats** | JSDoc, docstrings, OpenAPI for consistency |
-| **Include examples** | Real usage examples aid understanding |
-| **Keep docs updated** | Regenerate when code changes significantly |
+| Practice | Description | Example |
+|----------|-------------|---------|
+| **Document as you go** | Generate docs when writing new functions | "Generate JSDoc for this new validateEmail function" |
+| **Use structured formats** | JSDoc, docstrings, OpenAPI for consistency | Use `@param`, `@returns`, `@throws` tags consistently |
+| **Include examples** | Real usage examples aid understanding | Add `@example calculateTax(100, 0.2) // returns 20` |
+| **Keep docs updated** | Regenerate when code changes significantly | "Update the docstring to reflect the new error handling" |
 
 ### Refining Suggestions
 

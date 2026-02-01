@@ -110,7 +110,7 @@ This training program is structured as a progressive learning journey, taking pa
 
 ### Week 2: Advanced Development and Support Use Cases
 
-**Duration:** 2 to 4 hours (1 session)
+**Duration:** 2 to 4 hours
 
 **Objective:** Dive deeper into advanced use cases for developers and introduce Copilot as a support tool for maintaining high-quality standards.
 
@@ -122,7 +122,7 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Introduction to **prompt engineering**: crafting effective comments and instructions to guide Copilot
 - The CRAFT framework for structuring prompts
 - Writing effective prompts for code explanation and generation
-- Generating code aligned with organizational standards (Instruction files and style guides)
+- Generating code aligned with organisational standards (Instruction files and style guides)
 - Incorporating pre-emptive security recommendations
 - Practical prompt exercises with examples
 
