@@ -460,13 +460,13 @@ Generate tests and refine them:
 
 ### Refining Suggestions
 
-| Practice | Description |
-|----------|-------------|
-| **Never accept blindly** | Always review before accepting |
-| **Iterate incrementally** | Build up complexity through refinements |
-| **Request alternatives** | Compare different approaches |
-| **Test thoroughly** | Verify correctness with unit tests |
-| **Apply standards** | Ensure alignment with team conventions |
+| Practice | Description | Example |
+|----------|-------------|---------|
+| **Never accept blindly** | Always review before accepting | Check that a sorting function handles empty arrays before using it |
+| **Iterate incrementally** | Build up complexity through refinements | Start with basic search, then add filtering, then add pagination |
+| **Request alternatives** | Compare different approaches | "Show me 2-3 ways to implement caching for this function" |
+| **Test thoroughly** | Verify correctness with unit tests | "Generate Jest tests covering edge cases for this function" |
+| **Apply standards** | Ensure alignment with team conventions | "Refactor to follow our error handling pattern with Result objects" |
 
 ---
 
