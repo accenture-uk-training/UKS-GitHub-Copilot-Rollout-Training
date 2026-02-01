@@ -2,6 +2,8 @@
 
 GitHub Copilot offers four distinct interaction modes designed for different stages of the development lifecycle: **Ask**, **Edit**, **Agent**, and **Plan**. Each mode serves a specific purpose and understanding when to use each one will help you get the most out of GitHub Copilot.
 
+> **Note:** Feature availability varies by IDE and version. In particular, **Edit mode is only available in Visual Studio Code and JetBrains IDEs**. See the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) and [Chat in IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide?tool=vscode) for details.
+
 ---
 
 ## Contents
@@ -97,10 +99,10 @@ Custom Agents allow repositories or organizations to define specialized AI assis
 
 ### How it works
 
-You can switch your chat context to a specific agent using the `@` syntax:
-- `@workspace` - Context-aware assistance for your current workspace
-- `@github` - GitHub-specific operations
-- Custom agents defined for your organization
+Depending on your IDE and configuration, you can scope your prompt using chat participants (type `@` in the prompt box to see what’s available). For example:
+- `@github` - GitHub-specific skills (available in Copilot Chat)
+- `@workspace` - Workspace-aware assistance (availability varies by IDE/version)
+- Organization-specific custom agents (availability varies by IDE/version)
 
 ### Example
 

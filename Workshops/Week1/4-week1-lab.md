@@ -44,7 +44,8 @@ If the exercise isn't ready in 20 seconds, please check the [Actions](../../acti
 
 ---
 
-&copy; 2026 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+Attribution: This lab is based on the GitHub Skills template **Getting started with GitHub Copilot**.
+Upstream source: https://github.com/skills/getting-started-with-github-copilot
 
 ---
 
