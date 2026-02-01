@@ -223,7 +223,11 @@ Create a file at `.github/copilot-instructions.md`:
 
 Create instructions for specific file types or directories:
 
+> **VS Code reference:** Instructions files support YAML frontmatter like `applyTo`, `name`, and `description`. See https://code.visualstudio.com/docs/copilot/customization/custom-instructions
+
 **For test files (`.github/instructions/tests.instructions.md`):**
+
+> **Note:** `applyTo` is a single glob pattern. If you need multiple patterns with different scopes, create multiple `.instructions.md` files.
 ```markdown
 
 ---
@@ -244,11 +248,20 @@ description: "Guidelines for writing unit tests"
 
 Create reusable prompt templates for common tasks in `.github/prompts/`. Prompt files support frontmatter with the following properties:
 
+> **VS Code reference:** Prompt file frontmatter uses `agent` and supports `tools`. See https://code.visualstudio.com/docs/copilot/customization/prompt-files
+
 | Property | Description | Values |
 |----------|-------------|--------|
-| `mode` | The chat mode for execution | `ask`, `edit`, `agent` |
-| `description` | Brief summary shown in selection UI | Free text |
-| `tools` | Available tools (agent mode only) | Array of tool names |
+| `description` | A short description of the prompt | Free text |
+| `name` | The name of the prompt, used after typing `/` in chat (defaults to the file name) | Free text |
+| `argument-hint` | Optional hint text shown in the chat input field to guide users | Free text |
+| `agent` | The agent used for running the prompt: `ask`, `edit`, `agent`, or the name of a custom agent (defaults to the current agent) | `ask`, `edit`, `agent`, or custom agent name |
+| `model` | The language model used when running the prompt (defaults to the currently selected model in the model picker) | Model identifier (string) |
+| `tools` | A list of tool or tool set names available for this prompt. Can include built-in tools, tool sets, MCP tools, or extension-contributed tools. To include all tools from an MCP server, use `<server name>/*`. | Array of tool or tool-set names |
+
+> Learn more about tools in chat: https://code.visualstudio.com/docs/copilot/chat/chat-tools
+
+> **Tip:** If you specify tools in a prompt file, VS Code uses the priority order: prompt file tools → referenced custom agent tools → default tools for the selected agent.
 
 #### Example 1: Code Review (`.github/prompts/code-review.prompt.md`)
 
@@ -256,9 +269,12 @@ Uses `agent` mode with tools for active repository analysis:
 
 ```markdown
 ---
-mode: 'agent'
+agent: 'agent'
+name: 'code-review'
 description: 'Language-agnostic code review with repository analysis and fix-oriented feedback'
-tools: ['codebase', 'githubRepo', 'search', 'usages']
+argument-hint: 'focus=<security|performance|readability>'
+model: '<model-id>'
+tools: ['codebase', 'githubRepo', 'search', 'usages', 'myMcpServer/*']
 ---
 
 # Code Review
@@ -281,14 +297,18 @@ Provide feedback as:
 Include specific line references and concrete fix suggestions.
 ```
 
+> **Note:** Replace `<model-id>` with a model available in your environment, and replace `myMcpServer` with the name of an installed MCP server (or remove that entry if you are not using MCP).
+
 #### Example 2: Security Review (`.github/prompts/security-review.prompt.md`)
 
 Uses `ask` mode for security-focused analysis and discussion:
 
 ```markdown
 ---
-mode: 'ask'
+agent: 'ask'
+name: 'security-review'
 description: 'OWASP-aligned security review identifying vulnerabilities and remediation steps'
+argument-hint: 'target=<auth|api|data|ui>'
 ---
 
 # Security Review
@@ -317,8 +337,10 @@ Uses `edit` mode for direct file modifications:
 
 ```markdown
 ---
-mode: 'edit'
+agent: 'edit'
+name: 'readme-update'
 description: 'Update README with current project structure and usage instructions'
+argument-hint: 'audience=<devs|ops|users>'
 ---
 
 # README Update
