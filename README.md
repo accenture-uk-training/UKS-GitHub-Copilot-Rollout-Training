@@ -52,6 +52,8 @@ This training program is structured as a progressive learning journey, taking pa
 
 **Objective:** Establish a foundational understanding of GitHub Copilot and introduce core workflows for developers.
 
+> **Note:** Copilot features (Ask/Edit/Agent/Plan, shortcuts, and advanced capabilities) vary by IDE and version. Use the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) as the source of truth.
+
 #### 1. Understanding GitHub Copilot (30 minutes)
 
 - Overview of its purpose, architecture, and AI-driven capabilities
