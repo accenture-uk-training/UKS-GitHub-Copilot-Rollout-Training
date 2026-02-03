@@ -241,7 +241,7 @@ The installation process varies by IDE. Follow the relevant section below for yo
 
 #### Known Limitations
 
-- **No Edit mode (Copilot Edits):** Multi-file editing capabilities not available
+- **No Edit mode:** Edit mode isn't available in Xcode. If agent mode is available in your IDE/version, Copilot may still be able to work across multiple files. Use the feature matrix as the source of truth.
 - **Extensions:** Not supported
 - **MCP:** Supported (see feature matrix; availability may vary by version/policy)
 - **No Code referencing:** Cannot view public code matches for suggestions
@@ -388,10 +388,10 @@ SAP ABAP developers use **ABAP Development Tools (ADT)** within Eclipse to devel
 
 - **No Checkpoints support:** Cannot create or restore checkpoints during agent sessions
 - **No Copilot code review:** Automated code review features not supported
-- **No Edit mode (Copilot Edits):** Multi-file editing capabilities not available
+- **No Edit mode:** Edit mode isn't available in Eclipse. If agent mode is available in your IDE/version, Copilot may still be able to work across multiple files. Use the feature matrix as the source of truth.
 - **Extensions:** Not supported
 - **MCP:** Supported (see feature matrix; availability may vary by version/policy)
-- **No Prompt files:** Cannot use `.github/copilot-instructions.md` or similar prompt files
+- **No Prompt files:** Prompt files are not supported in Eclipse (see feature matrix). Note that `.github/copilot-instructions.md` is a repository custom instructions file (a different feature), and its support can vary by environment.
 - **Custom instructions in preview:** Repository and file-level custom instructions have limited support
 - **Installation dependency conflicts:** May encounter conflicts with Mylyn WikiText UI and LSP4e components
 
