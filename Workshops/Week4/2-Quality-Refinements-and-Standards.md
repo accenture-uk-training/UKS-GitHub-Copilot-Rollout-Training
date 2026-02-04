@@ -580,7 +580,7 @@ fi
 npx lint-staged
 ```
 
-Note: Husky supports Windows, but hooks are shell scripts. If you are on Windows, ensure your Git environment can run POSIX shell scripts (for example via Git for Windows' bundled tooling). See https://typicode.github.io/husky/
+Note: Husky supports Windows, but hooks are shell scripts. If you are on Windows, ensure your Git environment can run POSIX shell scripts (for example via Git for Windows' bundled tooling). See <https://typicode.github.io/husky/>
 
 ---
 
