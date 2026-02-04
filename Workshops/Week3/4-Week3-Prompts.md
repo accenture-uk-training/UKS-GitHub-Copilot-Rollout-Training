@@ -328,13 +328,13 @@ Modify this Jest configuration to:
 - Run tests in parallel using maxWorkers
 - Split slow tests into separate files
 - Use test.concurrent for independent tests
-- Optimize test database setup
+- Optimise test database setup
 ```
 
 #### Improve Test Performance
 
 ```text
-Optimize these integration tests that are taking too long:
+Optimise these integration tests that are taking too long:
 [paste test code]
 - Identify slow operations
 - Use transaction rollback instead of database cleanup

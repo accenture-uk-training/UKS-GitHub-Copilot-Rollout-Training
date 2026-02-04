@@ -95,7 +95,7 @@ In addition to the core modes, GitHub Copilot supports **custom agents** that pr
 
 ### What are Custom Agents?
 
-Custom Agents allow repositories or organizations to define specialised AI assistants. Instead of a generic Copilot, you interact with an agent tailored to specific rules, documentation, or external services.
+Custom Agents allow repositories or organisations to define specialised AI assistants. Instead of a generic Copilot, you interact with an agent tailored to specific rules, documentation, or external services.
 GitHub describes custom agents as specialised versions of Copilot coding agent. You define them using Markdown files called **agent profiles**, which can specify prompts, tools, and MCP servers.
 
 ### How it works
@@ -103,7 +103,7 @@ GitHub describes custom agents as specialised versions of Copilot coding agent. 
 Depending on your IDE and configuration, you can scope your prompt using chat participants (type `@` in the prompt box to see what’s available). For example:
 - `@github` - GitHub-specific skills (available in Copilot Chat)
 - `@workspace` - Workspace-aware assistance (availability varies by IDE/version)
-- Organization-specific custom agents (availability varies by IDE/version)
+- Organisation-specific custom agents (availability varies by IDE/version)
 
 ### Example
 

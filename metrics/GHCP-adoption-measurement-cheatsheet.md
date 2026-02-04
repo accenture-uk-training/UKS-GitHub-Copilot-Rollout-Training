@@ -130,7 +130,7 @@ Keep this lightweight - a quick pulse check to understand developer sentiment an
 
 ## 9. Fictional Baseline Set (Starter Reference Numbers)
 
-Use this complete mock baseline as a starting point if you need to establish targets immediately. Adapt these to your organization's actual baseline data.
+Use this complete mock baseline as a starting point if you need to establish targets immediately. Adapt these to your organisation's actual baseline data.
 
 ### Delivery Performance
 - **Deployment Frequency:** 2 deployments per week
@@ -184,14 +184,14 @@ Use this complete mock baseline as a starting point if you need to establish tar
 - **Adoption Metrics (Section 7):** Based on standard software adoption measurement frameworks and Copilot telemetry capabilities.
 - **DX Survey Questions (Section 8):** Derived from NASA Task Load Index (TLX) and validated productivity perception research.
 
-**Fictional baselines (Section 9)** are illustrative and should be replaced with your organization's actual pre-adoption data.
+**Fictional baselines (Section 9)** are illustrative and should be replaced with your organisation's actual pre-adoption data.
 
 ---
 
 ## Next Steps
 
 1. **Establish your pre-adoption baseline** during the 8-week period before rollout
-2. **Define your cohorts** based on your organization's structure
+2. **Define your cohorts** based on your organisation's structure
 3. **Select your measurement sources** (GitHub, CI/CD system, incident tool, surveys)
 4. **Set targets** based on realistic expectations (typically 15 to 40% improvement in flow metrics)
 5. **Create a measurement dashboard** to track progress weekly

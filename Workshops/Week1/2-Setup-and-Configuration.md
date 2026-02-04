@@ -222,7 +222,7 @@ The installation process varies by IDE. Follow the relevant section below for yo
    - Open the **GitHub Copilot for Xcode** application
    - Click **Extension Permission**
    - Enable **GitHub Copilot** and click **Done**
-3. **Restart Xcode** — you will see a new "GitHub Copilot" item in the **Editor** menu
+3. **Restart Xcode**. You will see a new "GitHub Copilot" item in the **Editor** menu
 
 #### Sign In
 
@@ -379,7 +379,7 @@ SAP ABAP developers use **ABAP Development Tools (ADT)** within Eclipse to devel
 
 | Action | Method |
 |--------|--------|
-| **Trigger Suggestions** | Start typing—suggestions appear inline |
+| **Trigger Suggestions** | Start typing, suggestions appear inline |
 | **Accept Suggestion** | `Tab` |
 | **Dismiss Suggestion** | `Esc` |
 | **Open Copilot Chat** | Click Copilot icon in toolbar |
@@ -488,7 +488,7 @@ If your subscription provides multiple model options:
 2. Use the **model picker** in the chat input field (if available for your plan/policy)
 3. Select from available models (varies by subscription — see [Supported AI models](https://docs.github.com/en/copilot/using-github-copilot/ai-models/supported-ai-models-in-copilot))
 
-> **Note:** Different models have different premium request multipliers, which can affect your monthly usage allowance. Copilot Business users may need their organization to enable model switching.
+> **Note:** Different models have different premium request multipliers, which can affect your monthly usage allowance. Copilot Business users may need their organisation to enable model switching.
 
 ---
 
