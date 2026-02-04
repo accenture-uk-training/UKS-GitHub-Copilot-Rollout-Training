@@ -54,8 +54,8 @@ var config = {
     tax: 0.20,
     discount: 0.1,
     threshold: 100,
-  api_key: "sk_example_do_not_use",
-  db_connection: "postgresql://user:password@localhost:5432/orders"
+    api_key: "sk_example_do_not_use",
+    db_connection: "postgresql://example_user:example_password@localhost:5432/example_orders"
 };
 
 function process(o) {
