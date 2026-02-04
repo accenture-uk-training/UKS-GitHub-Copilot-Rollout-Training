@@ -178,7 +178,7 @@ Use this complete mock baseline as a starting point if you need to establish tar
 
 **These metrics and frameworks are validated as follows:**
 
-- **DORA Metrics (Section 3):** Based on [Google's DORA research](https://dora.dev), validated across 35,000+ organizations and multiple peer-reviewed studies. Industry gold standard.
+- **DORA Metrics (Section 3):** Based on DORA research. See [DORA](https://dora.dev) for the current research programme and guidance.
 - **Flow Efficiency Metrics (Section 4):** Aligned with flow-based software delivery principles documented in *Accelerate* by Nicole Forsgren et al.
 - **Guardrails (Sections 5 to 6):** Follow industry best practices from NIST, OWASP, and GitHub security documentation.
 - **Adoption Metrics (Section 7):** Based on standard software adoption measurement frameworks and Copilot telemetry capabilities.
