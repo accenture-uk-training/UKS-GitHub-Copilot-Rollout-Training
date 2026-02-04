@@ -133,20 +133,20 @@ Refactor this function with:
 
 **Refactored Output:**
 ```javascript
-const VAT_RATE = 0.2;
+const DISCOUNT_RATE = 0.2;
 
 /**
- * Calculates the total price including VAT.
+ * Calculates the final price after applying a discount.
  * @param {number} quantity - Number of items
  * @param {number} unitPrice - Price per item
  * @param {number} shipping - Shipping cost
- * @returns {number} Final price including VAT
+ * @returns {number} Final price after discount
  */
-function calculateTotalPriceIncludingVat(quantity, unitPrice, shipping) {
+function calculateDiscountedPrice(quantity, unitPrice, shipping) {
     const subtotal = quantity * unitPrice;
-    const totalBeforeTax = subtotal + shipping;
-    const vatAmount = totalBeforeTax * VAT_RATE;
-    return totalBeforeTax + vatAmount;
+    const totalBeforeDiscount = subtotal + shipping;
+    const discountAmount = totalBeforeDiscount * DISCOUNT_RATE;
+    return totalBeforeDiscount - discountAmount;
 }
 ```
 
