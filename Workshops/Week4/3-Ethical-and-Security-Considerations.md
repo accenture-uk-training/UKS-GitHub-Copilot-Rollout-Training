@@ -34,9 +34,9 @@ GitHub Copilot was trained on publicly available code from GitHub repositories. 
 
 ### Copilot Settings for IP Protection
 
-**Suggestions matching public code and code referencing**
+**Suggestions matching public code and code references**
 
-GitHub Copilot can be configured to allow or block suggestions that match publicly available code. If suggestions matching public code are allowed, Copilot can also provide references to similar public code ("code referencing").
+GitHub Copilot can be configured to allow or block suggestions that match publicly available code. If suggestions matching public code are allowed, Copilot can also provide references to similar public code (code references).
 
 This is configured in either your personal settings or your organisation settings on GitHub.com.
 
